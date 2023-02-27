@@ -1,10 +1,10 @@
 package calculadora;
 
-public class Soma {
+public class Multiplicacao {
 	private double numero1;
 	private double numero2;
 	
-	public Soma(double num1, double num2) {
+	public Multiplicacao(double num1, double num2) {
 		this.numero1 = num1;
 		this.numero2 = num2;
 	}
