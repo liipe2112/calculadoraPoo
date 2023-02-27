@@ -24,4 +24,8 @@ public class Multiplicacao {
 	public double getNumero2() {
 		return numero2;
 	}
+	
+	public double multiplicar() {
+		return numero1 * numero2;
+	}
 }

@@ -24,4 +24,11 @@ public class Divisao {
 	public double getNumero2() {
 		return numero2;
 	}
+	
+	public double dividir() {
+		if (numero2 == 0 || numero1 == 0) {
+			System.out.println("Não é possível dividir por 0");
+		}
+		return numero1 / numero2;
+	}
 }

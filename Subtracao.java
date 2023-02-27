@@ -24,4 +24,8 @@ public class Subtracao {
 	public double getNumero2() {
 		return numero2;
 	}
+	
+	public double subtrair() {
+		return numero1 - numero2;
+	}
 }
