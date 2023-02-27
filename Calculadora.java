@@ -1,43 +1,32 @@
 package calculadora;
 
+import java.util.Scanner;
+
 public class Calculadora {
-	private double numero1;
-	private double numero2;
-	
-	public Calculadora(double num1, double num2) {
-		this.numero1 = num1;
-		this.numero2 = num2;
-	}
-	
-	public void setNumero1(double num1) {
-		this.numero1 = num1;
-	}
-	
-	public void setNumero2(double num2) {
-		this.numero2 = num2;
-	}
-	
-	public double getNumero1() {
-		return this.numero1;
-	}
-	
-	public double getNumero2() {
-		return this.numero2;
-	}
-	
-	public double soma() {
-		return this.numero1 + this.numero2;
-	}
-	
-	public double subtracao() {
-		return this.numero1 - this.numero2;
-	}
-	
-	public double multiplicacao() {
-		return this.numero1 * this.numero2;
-	}
-	
-	public double divisao() {
-		return this.numero1 / this.numero2;
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println(" ************************************");
+		System.out.println(" * Bem-vindo a calculadora Java POO *");
+		System.out.println(" ************************************");
+		
+		System.out.println("Digite o numero 1: ");
+		double numero1 = entrada.nextDouble();
+		
+		System.out.println("Digite o numero 2: ");
+		double numero2 = entrada.nextDouble();
+		
+		Soma soma = new Soma (numero1, numero2);
+		Subtracao subtracao = new Subtracao (numero1, numero2);
+		Multiplicacao multiplicacao = new Multiplicacao (numero1, numero2);
+		Divisao divisao = new Divisao (numero1, numero2);
+		
+		System.out.println("Soma: " + soma.somar());
+		System.out.println("Subtração: " + subtracao.subtrair());
+		System.out.println("Multiplicação: " + multiplicacao.multiplicar());
+		System.out.println("Divisao: " + divisao.dividir());
+		
+		
+		
 	}
 }
